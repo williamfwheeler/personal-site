@@ -1,0 +1,43 @@
+:root {
+    --mainBlack: black;
+    --mainOrange: #D78425;
+    --mainRedOrange: #C43D13;
+    --mainNavy: #234C72;
+    --mainDarkBlue: #18294A;
+    --mainBlue: aquamarine;
+    --mainWhite: white;
+    --offWhite: #D5C9AE;
+}
+
+.about {
+    height: 30vh;
+    background-color: var(--offWhite);
+}
+
+.stripeContainer {
+    display: flex;
+    column-gap: 20px;
+}
+
+.stripe {
+    flex: 1;
+    height: 200px;
+    transform: skew(-30deg);
+}
+
+.stripe.orange {
+    background-color: var(--mainOrange);
+}
+.stripe.redOrange {
+    background-color: var(--mainRedOrange);
+}
+.stripe.navy {
+    background-color: var(--mainNavy);
+}
+.stripe.darkBlue {
+    background-color: var(--mainDarkBlue);
+}
+
+/* div {
+    border: solid black 1px;
+} */

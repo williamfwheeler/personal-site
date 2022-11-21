@@ -1,0 +1,61 @@
+:root {
+    --mainBlack: black;
+    --mainOrange: #D78425;
+    --mainRedOrange: #C43D13;
+    --mainNavy: #234C72;
+    --mainDarkBlue: #18294A;
+    --mainBlue: aquamarine;
+    --mainWhite: white;
+    --offWhite: #D5C9AE;
+}
+
+.navBar {
+    position: absolute;
+    width: 100vw;
+    height: max(60px);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--mainOrange);
+    color: var(--mainBlack)
+}
+
+.siteName {
+    display: flex;
+    gap: max(20px);
+    margin-left: max(30px);
+}
+
+.mainLogo img {
+    display: block;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: gear-spin 10s infinite;
+}
+
+@keyframes gear-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.links {
+    display: flex;
+    gap: max(20px);
+    margin-right: max(30px);
+}
+
+/* div {
+    border: solid black 1px;
+} */
