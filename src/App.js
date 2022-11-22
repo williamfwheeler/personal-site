@@ -12,6 +12,8 @@ function App() {
       <Nav />
       <Hero />
       <About />
+      <Skills />
+      <Projects />
       <Footer />
     </div>
   );
