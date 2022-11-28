@@ -1,0 +1,41 @@
+.skillContainer {
+    padding: max(40px);
+    background-color: #7bf2da;
+}
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.skillsHeader hr {
+    flex:1;
+    border: 3px solid black;
+    margin: 15px;
+}
+
+svg {
+    width: max(75px);
+}
+
+.skillBucketContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: max(200px);
+    padding: max(60px);
+}
+
+.skillBucket {
+   
+}
+
+.skillBox {
+    border: solid red 3px;
+    border-radius: 15px;
+    padding: max(30px);
+}
+
+/* * {
+    border: solid black 1px;
+} */
