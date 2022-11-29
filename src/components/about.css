@@ -18,12 +18,23 @@
 
 .stripeContainer {
     display: flex;
-    column-gap: 20px;
+    column-gap: 5px;
+}
+
+.stripeContainer.line {
+    flex: 1;
+    display: flex;
+    column-gap: 0px;
+    padding-left: 15px;
+}
+
+.stripeContainer.line > .stripe {
+    height: 8px;
 }
 
 .stripe {
     flex: 1;
-    height: 200px;
+    height: 20px;
     transform: skew(-30deg);
 }
 
