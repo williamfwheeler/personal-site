@@ -4,7 +4,8 @@
   --mainRedOrange: #C43D13;
   --mainNavy: #234C72;
   --mainDarkBlue: #18294A;
-  --mainBlue: aquamarine;
+  /* --mainBlue: aquamarine; */
+  --mainBlue: rgb(94,192,165);
   --mainWhite: white;
   --offWhite: rgb(244,241,232);
 }
