@@ -1,6 +1,7 @@
 .skillContainer {
     padding: max(40px);
-    background-color: #7bf2da;
+    background-color: var(--mainNavy);
+    color: white;
 }
 
 .skillsHeader {
@@ -11,7 +12,7 @@
 
 .skillsHeader hr {
     flex:1;
-    border: 3px solid black;
+    border: 3px solid white;
     margin: 15px;
 }
 

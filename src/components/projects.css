@@ -3,3 +3,15 @@
     background-color: var(--offWhite);
     padding: max(40px);
 }
+
+.projectsHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.projectsHeader hr {
+    flex:1;
+    border: 3px solid black;
+    margin: 15px;
+}

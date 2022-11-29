@@ -5,7 +5,7 @@ function Projects() {
 
     return (
         <div className="projects">
-            <div className="skillsHeader">
+            <div className="projectsHeader">
                     <h1>Projects</h1>
                     <hr></hr>
             </div>

@@ -4,6 +4,18 @@
     padding: max(40px);
 }
 
+.aboutHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutHeader hr {
+    flex:1;
+    border: 3px solid black;
+    margin: 15px;
+}
+
 .stripeContainer {
     display: flex;
     column-gap: 20px;
