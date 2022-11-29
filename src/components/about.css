@@ -1,14 +1,3 @@
-:root {
-    --mainBlack: black;
-    --mainOrange: #D78425;
-    --mainRedOrange: #C43D13;
-    --mainNavy: #234C72;
-    --mainDarkBlue: #18294A;
-    --mainBlue: aquamarine;
-    --mainWhite: white;
-    --offWhite: #D5C9AE;
-}
-
 .about {
     height: 30vh;
     background-color: var(--offWhite);
