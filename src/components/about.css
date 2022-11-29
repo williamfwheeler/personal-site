@@ -1,12 +1,13 @@
 :root {
     --mainBlack: black;
-    --mainOrange: #D78425;
+    --mainOrange: #f78a0e;
     --mainRedOrange: #C43D13;
     --mainNavy: #234C72;
     --mainDarkBlue: #18294A;
     --mainBlue: aquamarine;
     --mainWhite: white;
-    --offWhite: #D5C9AE;
+    /* --offWhite: #D5C9AE; */
+    --offWhite: rgb(244,241,232);
 }
 
 .about {
@@ -17,12 +18,12 @@
 
 .stripeContainer {
     display: flex;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 
 .stripe {
     flex: 1;
-    height: 200px;
+    height: 50px;
     transform: skew(-30deg);
 }
 
