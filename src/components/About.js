@@ -5,7 +5,10 @@ function About() {
 
     return (
         <div className="about">
-            <div>About</div>
+            <div className="skillsHeader">
+                <h1>About</h1>
+                <hr></hr>
+            </div>
             <div className="stripeContainer">
                 <div className="stripe orange"></div>
                 <div className="stripe redOrange"></div>

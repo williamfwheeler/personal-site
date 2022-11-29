@@ -4,7 +4,7 @@ import './hero.css';
 function Hero() {
 
     return (
-        <div>
+        <div className="hero">
             <h1>Hero</h1>
 
         </div>

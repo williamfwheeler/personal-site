@@ -1,10 +1,14 @@
 import React from "react";
+import './projects.css';
 
 function Projects() {
 
     return (
-        <div>
-        <h1>Projects</h1>
+        <div className="projects">
+            <div className="skillsHeader">
+                    <h1>Projects</h1>
+                    <hr></hr>
+            </div>
         </div>
     );
 }
