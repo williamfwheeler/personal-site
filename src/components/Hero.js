@@ -51,7 +51,9 @@ function Hero() {
                     fill="transparent"/>
                 </svg>
             </div>
-            {/* <Floppy /> */}
+            <Floppy floppyName={"floppy1"}/>
+            <Floppy floppyName={"floppy2"}/>
+            <Floppy floppyName={"floppy3"}/>
         </div>
     );
 }

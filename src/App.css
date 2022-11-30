@@ -9,6 +9,11 @@
   --mainBlue: rgb(94,192,165);
   --mainWhite: white;
   --offWhite: rgb(244,241,232);
+  --floppyRed: #ED2939;
+  --floppyDarkRed: darkred;
+  --floppyYellow:rgb(255,188,50);
+  --floppyDarkYellow:rgb(156, 104, 0);
+  --floppyBlue:#192bc2;
 }
 
 .App {

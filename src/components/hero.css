@@ -40,32 +40,50 @@ path.outer3 {
     stroke-width: 50px;
 }
 
-circle {
-    fill: none;
-    stroke-linecap: butt;
-    transform: rotate(-86deg);
-    transform-origin: center;
-    animation-name: drawCircle;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+/* FLOPPY FORMATTING BELOW */
+
+.floppy {
+    position: absolute;
+    transform: scale(40%);
 }
 
-.circle1 {
-    stroke-dasharray: 320;
-    stroke-dashoffset: 0;
-    stroke-width: 20px;
-    stroke: #fff;
-    z-index: 4;
+.floppy .topFill {
+    fill: var(--mainWhite);
 }
 
-.circle2 {
-    stroke-dasharray: 330;
-    stroke-dashoffset: 250;
-    stroke-width: 40px;
-    stroke: #00aaad;
-    z-index: 3;
+.floppy.floppy2 {
+    top: 400px;
 }
+
+.floppy.floppy3 {
+    left: 400px;
+}
+
+.floppy1 .mainFill, .floppy1 .bottomFill {
+    fill: var(--floppyRed);
+}
+
+.floppy1 .mainOutline, .floppy1 .bottomOutline, .floppy1 .topOutline {
+    fill: var(--floppyDarkRed);
+}
+
+.floppy2 .mainFill, .floppy2 .bottomFill {
+    fill: var(--floppyYellow);
+}
+
+.floppy2 .mainOutline, .floppy2 .bottomOutline, .floppy2 .topOutline {
+    fill: var(--floppyDarkYellow)
+}
+
+.floppy3 .mainFill, .floppy3 .bottomFill {
+    fill: var(--floppyBlue);
+}
+
+.floppy3 .mainOutline, .floppy3 .bottomOutline, .floppy3 .topOutline {
+    fill: var(--mainBlack);
+}
+
+
 
 /* .hero * {
     border: solid red 1px;
