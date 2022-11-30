@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0px;
@@ -16,7 +15,7 @@
     justify-content: space-between;
     /* background-color: var(--mainOrange); */
     background-color: transparent;
-    color: var(--mainBlack)
+    color: var(--mainBlack);
 }
 
 .siteName {
