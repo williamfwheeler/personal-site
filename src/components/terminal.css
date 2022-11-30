@@ -1,0 +1,53 @@
+.terminal {
+    height: 85vh;
+    background-color: var(--offWhite);
+    padding: max(40px);
+}
+
+.terminalHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.terminalHeader hr {
+    flex:1;
+    border: 3px solid black;
+    margin: 15px;
+    transform: skew(-30deg);
+}
+
+.stripeContainer {
+    display: flex;
+    column-gap: 5px;
+}
+
+.stripeContainer.line {
+    flex: 1;
+    display: flex;
+    column-gap: 0px;
+    padding-left: 15px;
+}
+
+.stripeContainer.line > .stripe {
+    height: 8px;
+}
+
+.stripe {
+    flex: 1;
+    height: 20px;
+    transform: skew(-30deg);
+}
+
+.stripe.orange {
+    background-color: var(--mainOrange);
+}
+.stripe.redOrange {
+    background-color: var(--mainRedOrange);
+}
+.stripe.navy {
+    background-color: var(--mainNavy);
+}
+.stripe.darkBlue {
+    background-color: var(--mainDarkBlue);
+}

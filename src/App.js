@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Terminal from './components/Terminal';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Nav />
       <div className='bodyContainer'>
         <Hero />
+        <Terminal />
         <About />
         <Skills />
         <Projects />
