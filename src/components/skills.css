@@ -52,6 +52,15 @@
     /* border: solid 1px orange; */
 }
 
+.skillItem svg path {
+    fill: var(--offWhite);
+}
+
+.skillItem svg path.lettering{
+    fill: grey;
+}
+
+
 .skillItem:hover {
     
 }
