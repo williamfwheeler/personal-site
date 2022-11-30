@@ -26,7 +26,6 @@
 
 .skillBucket {
     flex: 1;
-    /* width: max(400px); */
 }
 
 .skillBucket > h1 {
@@ -49,7 +48,6 @@
 .skillItem {
     padding: 8px;
     color: var(--offWhite);
-    /* border: solid 1px orange; */
 }
 
 .skillItem svg path {
@@ -58,11 +56,6 @@
 
 .skillItem svg path.lettering{
     fill: grey;
-}
-
-
-.skillItem:hover {
-    
 }
 
 .skillItem h3 {

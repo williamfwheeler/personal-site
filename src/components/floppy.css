@@ -1,3 +1,25 @@
+.floppy {
+    position: absolute;
+    /* transform: scale(15%); */
+    width: max(200px);
+    /* transform: scale(70%); */
+    transition: 300ms;
+}
+
+.floppy:hover {
+    width: max(220px);
+}
+
+.floppy .topFill {
+    fill: var(--mainWhite);
+}
+
+.floppy text {
+    /* fill: var(--mainWhite); */
+    font-size: 70px;
+    font-weight: 800;
+}
+
 /* .floppy {
     position: absolute;
     transform: scale(40%);

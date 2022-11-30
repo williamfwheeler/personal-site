@@ -7,7 +7,7 @@ function Hero() {
     return (
         <div className="hero">
             <div className="illustrationContainer">
-                <svg>
+                <svg className="stripeIllustration">
                     <path className="outer3" 
                     d="M -90 340 h 410 s 150 00, 150 -150
                     s 150 -150 , 150 -150
@@ -51,9 +51,9 @@ function Hero() {
                     fill="transparent"/>
                 </svg>
             </div>
-            <Floppy floppyName={"floppy1"}/>
-            <Floppy floppyName={"floppy2"}/>
-            <Floppy floppyName={"floppy3"}/>
+            <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"26%"}/>
+            <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"26%"}/>
+            <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"}/>
         </div>
     );
 }
