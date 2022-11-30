@@ -1,5 +1,5 @@
 .about {
-    height: 30vh;
+    height: 40vh;
     background-color: var(--offWhite);
     padding: max(40px);
 }
@@ -52,6 +52,7 @@
     background-color: var(--mainDarkBlue);
 }
 
-/* div {
+
+/* .about * {
     border: solid black 1px;
 } */

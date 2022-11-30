@@ -1,14 +1,13 @@
 import React from "react";
 import './hero.css';
+import Floppy from "./Floppy";
 
 function Hero() {
 
     return (
         <div className="hero">
             <div className="illustrationContainer">
-
                 <svg>
-
                     <path className="outer3" 
                     d="M -90 340 h 410 s 150 00, 150 -150
                     s 150 -150 , 150 -150
@@ -50,13 +49,9 @@ function Hero() {
                     s 150 -150 , 150 -150
                     h 1300" 
                     fill="transparent"/>
-
-                    
                 </svg>
-
-
             </div>
-
+            {/* <Floppy /> */}
         </div>
     );
 }

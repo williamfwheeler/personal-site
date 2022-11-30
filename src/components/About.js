@@ -1,5 +1,6 @@
 import React from "react";
 import './about.css';
+import Floppy from "./Floppy";
 
 function About() {
 
