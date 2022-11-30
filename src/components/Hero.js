@@ -51,8 +51,8 @@ function Hero() {
                     fill="transparent"/>
                 </svg>
             </div>
-            <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"26%"}/>
-            <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"26%"}/>
+            <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"}/>
+            <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"24%"}/>
             <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"}/>
         </div>
     );
