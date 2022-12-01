@@ -17,6 +17,7 @@
   --computerDarkBorder: rgb(33, 32, 32);
   /* --terminalText: rgb(1,255,63); */
   --terminalText: rgb(4, 195, 52);
+  --carpetGreen: #012b01;
 }
 
 .App {

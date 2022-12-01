@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import './nav.css';
 import gear from '../assets/gear_image.png';
 
 function Nav() {
+
+    const [scrollClass,setScrollClass] = useState('beforeScroll');
 
     const handleHome = () => {
         window.scrollTo({
@@ -11,10 +13,23 @@ function Nav() {
             });
     }
 
+    const listenScrollEvent = (e) => {
+        if (window.scrollY > 400) {
+          setScrollClass('afterScroll');
+        } else {
+            setScrollClass('beforeScroll');
+        }
+        console.log(window.scrollY)
+      }
+
+    window.addEventListener('scroll',listenScrollEvent)
+
     return (
-        <div className="navBar">
-            <div className="siteName">WW Workshop</div>
-            <button class="homeButton" onClick={handleHome}>
+        <div className={`navBar ${scrollClass}`}>
+            <button className={`titleButton ${scrollClass}`} onClick={handleHome}>
+                <div className="siteName">WW Workshop</div>
+            </button>
+            <button className="homeButton" onClick={handleHome}>
                 <div className="mainLogo"><img src={gear} alt="spinning gear"></img></div>
             </button>
             <div className="links">

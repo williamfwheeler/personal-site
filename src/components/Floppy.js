@@ -9,7 +9,7 @@ function Floppy({floppyName,labelInfo,xPercent}) {
     const handleClick = () => {
         window.scrollTo({
             behavior: 'smooth',
-            top:970
+            top:990
             });
     }
 

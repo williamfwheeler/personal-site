@@ -1,8 +1,19 @@
 .terminal {
-    height: 85vh;
+    height: 90vh;
     /* background-color: var(--offWhite); */
-    background-color: #012b01;
+    background-color: var(--carpetGreen);
     padding: max(40px);
+}
+
+.terminal.beforeScroll {
+    background-color: var(--offWhite);
+    transition: 400ms;
+}
+
+
+.terminal.afterScroll {
+    background-color: var(--carpetGreen);
+    transition: 400ms;
 }
 
 .terminalHeader {

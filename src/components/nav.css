@@ -3,6 +3,25 @@
     padding: 0px;
 }
 
+.titleButton {
+    background: transparent;
+    border: none;
+    font-family: Righteous,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 1.5rem;
+}
+
+.titleButton.beforeScroll{
+    transition: 400ms;
+    color: var(--mainBlack);
+}
+
+.titleButton.afterScroll{
+    transition: 400ms;
+    color: var(--offWhite);
+}
+
 .homeButton {
     background-color: transparent;
     width: auto;
@@ -22,6 +41,18 @@
     /* background-color: var(--mainOrange); */
     background-color: transparent;
     color: var(--mainBlack);
+}
+
+.navBar.beforeScroll{
+    background-color: transparent;
+    transition: 400ms;
+    color: var(--mainBlack);
+}
+
+.navBar.afterScroll{
+    background-color: var(--carpetGreen);
+    transition: 400ms;
+    color: var(--offWhite);
 }
 
 .siteName {
