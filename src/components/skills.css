@@ -53,6 +53,10 @@
     color: var(--offWhite);
 }
 
+/* .skillItem svg:hover {
+    width: 70px;
+} */
+
 .skillItem svg path {
     fill: var(--offWhite);
 }
@@ -68,6 +72,7 @@
 
 .skillItem svg {
     width: max(60px);
+    transition: 100ms;
 }
 
 /* * {

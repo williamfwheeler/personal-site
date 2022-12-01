@@ -1,5 +1,5 @@
 .hero {
-    height:90vh;
+    height:100vh;
     background-color: var(--offWhite);
     /* border: blue solid 3px; */
     display: grid;

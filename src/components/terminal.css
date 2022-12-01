@@ -1,6 +1,7 @@
 .terminal {
     height: 85vh;
-    background-color: var(--offWhite);
+    /* background-color: var(--offWhite); */
+    background-color: #012b01;
     padding: max(40px);
 }
 
@@ -8,11 +9,12 @@
     display: flex;
     align-items: center;
     width: 100%;
+    color: var(--offWhite);
 }
 
 .terminalHeader hr {
     flex:1;
-    border: 3px solid black;
+    border: 3px solid var(--offWhite);
     margin: 15px;
     transform: skew(-30deg);
 }
@@ -51,3 +53,81 @@
 .stripe.darkBlue {
     background-color: var(--mainDarkBlue);
 }
+
+
+
+/* TERMINAL */
+
+.terminalContainer {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    margin:  30px;
+    column-gap: 40px;
+}
+
+.screenShell {
+    background-color: var(--agedComputer);
+    height: 75vh;
+    border-radius: 30px;
+    display: flex;
+}
+
+.screen {
+    flex:1;
+    margin: max(45px);
+    border-radius: 30px;
+    background-color: var(--computerDarkBorder);
+    border: solid var(--mainBlack) 10px;
+}
+
+
+
+.terminalHardware {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mug {
+    flex: 1.1;
+    /* background-color: black; */
+}
+
+.diskDrive {
+    flex: 1;
+    background-color: var(--agedComputer);
+    border-radius: 30px;
+    display: flex;
+}
+
+.driveInset {
+    flex: 1;
+    background-color: var(--computerDarkBorder);
+    margin: 20px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.middleDrive {
+    display: flex;
+}
+
+.floppyInsert {
+    flex: 1;
+    background-color: var(--mainBlack);
+    border: var(--agedComputer) 12px solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top:30px ;
+    margin-bottom:30px ;
+}
+
+
+/* .driveInset > div {
+    border: solid orange 1px;
+} */
+
+/* .terminalContainer > * {
+    border: solid coral 1px;
+} */
