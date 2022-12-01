@@ -8,6 +8,11 @@
     transition: 200ms;
 }
 
+button.floppy {
+    border: none;
+}
+
+
 .floppy:hover {
     width: max(220px);
 }

@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+.homeButton {
+    background-color: transparent;
+    width: auto;
+    border: none;
+}
+
 
 .navBar {
     position: sticky;
