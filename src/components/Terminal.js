@@ -1,4 +1,5 @@
 import './terminal.css'
+import Skills from './Skills';
 
 function Terminal() {
     return (
@@ -19,7 +20,9 @@ function Terminal() {
         <div className='terminalContainer'>
           <div className='terminalScreen'>
             <div className='screenShell'>
-              <div className='screen'></div>
+              <div className='screen'>
+                
+              </div>
             </div>
           </div>
           <div className='terminalHardware'>

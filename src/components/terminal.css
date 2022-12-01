@@ -102,7 +102,7 @@
 
 .driveInset {
     flex: 1;
-    background-color: var(--computerDarkBorder);
+    background-color: rgb(49, 48, 48);
     margin: 20px;
     border-radius: 15px;
     display: grid;
@@ -117,6 +117,7 @@
     flex: 1;
     background-color: var(--mainBlack);
     border: var(--agedComputer) 12px solid;
+    border-radius: 8px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top:30px ;
