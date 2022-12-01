@@ -44,7 +44,7 @@
     border: dashed var(--terminalText) 3px;
     /* border: solid grey 3px; */
     /* background-color: grey; */
-    border-radius: 15px;
+    border-radius: 5px;
     padding: max(20px);
     display: grid;
     grid-template-columns: repeat(auto-fill,70px);

@@ -14,12 +14,11 @@ function Nav() {
     }
 
     const listenScrollEvent = (e) => {
-        if (window.scrollY > 400) {
+        if (window.scrollY > 800) {
           setScrollClass('afterScroll');
         } else {
             setScrollClass('beforeScroll');
         }
-        console.log(window.scrollY)
       }
 
     window.addEventListener('scroll',listenScrollEvent)

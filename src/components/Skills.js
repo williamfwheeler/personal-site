@@ -6,7 +6,7 @@ function Skills() {
     return (
         <div className="skillContainer">
             <div className="skillsHeader">
-                <h1>Skill & Tools</h1>
+                <h1>Skills & Tools</h1>
                 <hr></hr>
             </div>
             <div className="skillBucketContainer">

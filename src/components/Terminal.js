@@ -1,18 +1,17 @@
 import './terminal.css'
-import Skills from './Skills';
+import Screen from './Screen';
 import React,{useState} from 'react';
 
-function Terminal() {
+function Terminal({screenClick}) {
 
   const [scrollClass,setScrollClass] = useState('beforeScroll');
 
   const listenScrollEvent = (e) => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 800) {
       setScrollClass('afterScroll');
     } else {
         setScrollClass('beforeScroll');
     }
-    console.log(window.scrollY)
   }
 
   window.addEventListener('scroll',listenScrollEvent)
@@ -37,7 +36,7 @@ function Terminal() {
         <div className='terminalScreen'>
           <div className='screenShell'>
             <div className='screen'>
-              <Skills />
+              <Screen screenInput={screenClick}/>
             </div>
           </div>
         </div>
@@ -47,7 +46,7 @@ function Terminal() {
             <div className='driveInset'>
               <div></div>
               <div className="middleDrive">
-                <div className='floppyInsert'></div>
+                <div className={`floppyInsert ${screenClick}`}></div>
               </div>
               <div></div>
             </div>

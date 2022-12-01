@@ -1,16 +1,13 @@
 import './floppy.css';
 
-function Floppy({floppyName,labelInfo,xPercent}) {
+function Floppy({floppyName,labelInfo,xPercent,optionClick}) {
 
-    // LATER import function and button wrap to get it to do things!
-
-    // label all path components with understandable classNames
-
-    const handleClick = () => {
+    const handleClick = (e) => {
         window.scrollTo({
             behavior: 'smooth',
-            top:990
+            top:984
             });
+        optionClick(labelInfo);
     }
 
     return (

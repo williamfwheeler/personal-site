@@ -2,7 +2,7 @@ import React from "react";
 import './hero.css';
 import Floppy from "./Floppy";
 
-function Hero() {
+function Hero({floppyClick}) {
 
     return (
         <div className="hero">
@@ -51,9 +51,9 @@ function Hero() {
                     fill="transparent"/>
                 </svg>
             </div>
-            <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"}/>
-            <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"24%"}/>
-            <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"}/>
+            <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
+            <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
+            <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
         </div>
     );
 }

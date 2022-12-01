@@ -45,13 +45,13 @@
 
 .navBar.beforeScroll{
     background-color: transparent;
-    transition: 400ms;
+    transition: 500ms;
     color: var(--mainBlack);
 }
 
 .navBar.afterScroll{
     background-color: var(--carpetGreen);
-    transition: 400ms;
+    transition: 500ms;
     color: var(--offWhite);
 }
 
@@ -67,6 +67,16 @@
     margin-left: auto;
     margin-right: auto;
     animation: gear-spin 10s infinite;
+}
+
+.navBar.beforeScroll img{
+    filter:invert(0%);
+    transition: 400ms;
+}
+
+.navBar.afterScroll img{
+    filter:invert(100%);
+    transition: 400ms;
 }
 
 @keyframes gear-spin {
