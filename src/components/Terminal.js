@@ -21,7 +21,7 @@ function Terminal() {
           <div className='terminalScreen'>
             <div className='screenShell'>
               <div className='screen'>
-                
+                <Skills />
               </div>
             </div>
           </div>
