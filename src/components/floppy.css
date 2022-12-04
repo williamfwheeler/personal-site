@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 .floppy {
-    position: absolute;
+    /* position: absolute; */
     /* transform: scale(15%); */
     /* width: 200px; */
     width: 200px;
@@ -67,6 +67,16 @@ button.floppy {
 
     .floppy:hover {
         width: max(130px);
+    }
+}
+
+@media (max-width:400px) {
+    .floppy {
+        width: 80px;
+    }
+
+    .floppy:hover {
+        width: max(100px);
     }
 }
 

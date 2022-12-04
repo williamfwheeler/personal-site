@@ -50,22 +50,36 @@ path.outer3 {
     stroke: var(--mainOrange);
     stroke-width: 50px;
 }
+/* FLOPPY CONTAINER */
+
+.floppyContainer {
+    position: absolute;
+    right: 2%;
+    top: 28%;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: 60px;
+}
 
 /* FLOPPY FORMATTING BELOW */
 
 .floppy.floppy1 {
-    right: 35%;
-    top: 30%;
+    /* right: 35%;
+    top: 30%; */
+    transform: rotate(10deg);
 }
 
 .floppy.floppy2 {
-    right: 22%;
-    top: 30%;
+    /* right: 22%;
+    top: 30%; */
+    transform: rotate(10deg);
 }
 
 .floppy.floppy3 {
-    right: 9%;
-    top: 30%;
+    /* right: 9%;
+    top: 30%; */
+    transform: rotate(10deg);
 }
 
 .floppy1 .mainFill, .floppy1 .bottomFill {
@@ -98,6 +112,12 @@ path.outer3 {
         transform-origin: 25% 70%;
         width: 1400px;
     }
+
+    .floppyContainer {
+        grid-template-columns: repeat(auto-fill,150px);
+        gap: 40px;
+        right: 0%;
+    }
 }
 
 @media (max-width:600px) {
@@ -115,6 +135,21 @@ path.outer3 {
         text-align: left;
         margin-left: 40px;
         font-size: 3rem;
+    }
+
+    .floppyContainer {
+        grid-template-columns: repeat(auto-fill,110px);
+        gap: 20px;
+        right: 2%;
+    }
+}
+
+@media (max-width:400px) {
+
+    .floppyContainer {
+        grid-template-columns: repeat(auto-fill,80px);
+        gap: 20px;
+        right: -8%;
     }
 }
 
