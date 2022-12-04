@@ -31,7 +31,7 @@ function Nav() {
             <button className="homeButton" onClick={handleHome}>
                 <div className="mainLogo"><img src={gear} alt="spinning gear"></img></div>
             </button>
-            <div className="links">
+            <div className="links" hidden="false">
                 <div>About</div>
                 <div>Skills</div>
                 <div>Projects</div>

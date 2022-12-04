@@ -100,6 +100,23 @@
     margin-right: max(30px);
 }
 
+@media (max-width:1400px) {
+    .links {
+        display: none;
+    }
+
+    .navBar {
+        justify-content: space-between;
+    }
+
+    .mainLogo img {
+        
+        width: max(40px);
+        margin-right: 30px;
+       
+    }
+}
+
 /* div {
     border: solid blue 1px;
 } */
