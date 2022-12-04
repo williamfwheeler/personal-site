@@ -4,20 +4,31 @@
     /* border: blue solid 3px; */
     display: grid;
     align-content: center;
+    text-align: center;
 }
 
 .hero > .illustrationContainer {
-    width: 100%;
-    height: fit-content;
+    /* width: 100%; */
+    /* height: fit-content;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* border: solid red 3px; */
 } 
 
 .hero .stripeIllustration {
-    width: 100%;
-    height: 500px;
+    /* width: 100%;
+    height: 470px; */
+    /* transform: scale(100%); */
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 3rem;
+}
+
+.hero h1 > p {
+    font-size: 2rem;
 }
 
 path.main {
@@ -44,17 +55,17 @@ path.outer3 {
 
 .floppy.floppy1 {
     right: 35%;
-    top: 20%;
+    top: 30%;
 }
 
 .floppy.floppy2 {
     right: 22%;
-    top: 20%;
+    top: 30%;
 }
 
 .floppy.floppy3 {
     right: 9%;
-    top: 20%;
+    top: 30%;
 }
 
 .floppy1 .mainFill, .floppy1 .bottomFill {
@@ -81,6 +92,31 @@ path.outer3 {
     fill: var(--mainBlack);
 }
 
+@media (max-width:1400px) {
+    .hero .stripeIllustration {
+        transform: scale(100%);
+        transform-origin: 25% 70%;
+        width: 1400px;
+    }
+}
+
+@media (max-width:600px) {
+    .hero .stripeIllustration {
+        /* transform: scale(180%);
+        transform-origin: 25% 70%; */
+        transform: scale(200%);
+        transform-origin: 30% 70%;
+        width: 600px;
+    }
+
+    .hero h1 {
+        position: relative;
+        bottom: 150%;
+        text-align: left;
+        margin-left: 40px;
+        font-size: 3rem;
+    }
+}
 
 
 /* .hero * {

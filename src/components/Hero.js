@@ -6,8 +6,13 @@ function Hero({floppyClick}) {
 
     return (
         <div className="hero">
+            <h1>William Wheeler
+            <p>/ / / / Web Developer</p>
+            </h1>
             <div className="illustrationContainer">
-                <svg className="stripeIllustration">
+                <svg className="stripeIllustration"
+                viewBox="180 -00 1300 480"
+                >
                     <path className="outer3" 
                     d="M -90 340 h 410 s 150 00, 150 -150
                     s 150 -150 , 150 -150
@@ -49,6 +54,8 @@ function Hero({floppyClick}) {
                     s 150 -150 , 150 -150
                     h 1300" 
                     fill="transparent"/>
+
+                    {/* <text x="670" y="35">/ / / / Web Developer</text> */}
                 </svg>
             </div>
             <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>

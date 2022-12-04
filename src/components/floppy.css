@@ -3,7 +3,8 @@
 .floppy {
     position: absolute;
     /* transform: scale(15%); */
-    width: max(200px);
+    /* width: 200px; */
+    width: 200px;
     /* transform: scale(70%); */
     transition: 200ms;
 }
@@ -48,3 +49,28 @@ button.floppy {
 .floppy .mainOutline, .floppy .bottomOutline, .floppy .topOutline {
     fill: var(--floppyDarkRed);
 } */
+
+@media (max-width:1400px) {
+    .floppy {
+        width: 150px;
+    }
+
+    .floppy:hover {
+        width: max(170px);
+    }
+}
+
+@media (max-width:600px) {
+    .floppy {
+        width: 110px;
+    }
+
+    .floppy:hover {
+        width: max(130px);
+    }
+}
+
+
+
+
+

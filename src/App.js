@@ -29,8 +29,7 @@ function App() {
       <div className='bodyContainer'>
         <Hero floppyClick={handleScreenChoice}/>
         <Terminal screenClick={screenChoice}/>
-        <About />
-        <Projects />
+        {/* <About /> */}
         <Footer />
       </div>
     </div>
