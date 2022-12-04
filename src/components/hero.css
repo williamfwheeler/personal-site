@@ -5,15 +5,14 @@
     display: grid;
     align-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .hero > .illustrationContainer {
-    /* width: 100%; */
-    /* height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* border: solid red 3px; */
+    background-image: url("../assets/stripeIllustration.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 70vh;
 } 
 
 .hero .stripeIllustration {
@@ -31,7 +30,9 @@
     font-size: 2rem;
 }
 
-path.main {
+/* STRIPE ILLUSTRATION (DEPRECATED) */
+
+/* path.main {
     stroke: var(--mainDarkBlue);
     stroke-width: 50px;
 }
@@ -49,7 +50,7 @@ path.outer2 {
 path.outer3 {
     stroke: var(--mainOrange);
     stroke-width: 50px;
-}
+} */
 /* FLOPPY CONTAINER */
 
 .floppyContainer {
@@ -107,11 +108,10 @@ path.outer3 {
 }
 
 @media (max-width:1400px) {
-    .hero .stripeIllustration {
-        transform: scale(100%);
-        transform-origin: 25% 70%;
-        width: 1400px;
-    }
+
+    .hero > .illustrationContainer {
+        background-position: 20%;
+    } 
 
     .floppyContainer {
         grid-template-columns: repeat(auto-fill,150px);
@@ -121,20 +121,18 @@ path.outer3 {
 }
 
 @media (max-width:600px) {
-    .hero .stripeIllustration {
-        /* transform: scale(180%);
-        transform-origin: 25% 70%; */
-        transform: scale(200%);
-        transform-origin: 30% 70%;
-        width: 600px;
-    }
+
+    .hero > .illustrationContainer {
+        background-position: 30%;
+        height: 50vh;
+    } 
 
     .hero h1 {
         position: relative;
-        bottom: 150%;
+        bottom: 10%;
         text-align: left;
         margin-left: 40px;
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .floppyContainer {
@@ -147,9 +145,11 @@ path.outer3 {
 @media (max-width:400px) {
 
     .floppyContainer {
+        /* position: relative; */
         grid-template-columns: repeat(auto-fill,80px);
         gap: 20px;
-        right: -8%;
+        top: 33%;
+        right: 2%;
     }
 }
 
