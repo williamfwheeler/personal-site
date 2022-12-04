@@ -21,12 +21,16 @@ function App() {
     }
   }
 
+  const handleEject = () => {
+    setScreenChoice("");
+  }
+
   return (
     <div className="App">
       <Nav />
       <div className='bodyContainer'>
         <Hero floppyClick={handleScreenChoice}/>
-        <Terminal screenClick={screenChoice}/>
+        <Terminal screenClick={screenChoice} ejectClick={handleEject}/>
         {/* <About /> */}
         <Footer />
       </div>

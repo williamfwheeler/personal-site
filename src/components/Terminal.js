@@ -2,7 +2,7 @@ import './terminal.css'
 import Screen from './Screen';
 import React,{useState} from 'react';
 
-function Terminal({screenClick}) {
+function Terminal({screenClick,ejectClick}) {
 
   const [scrollClass,setScrollClass] = useState('beforeScroll');
 
@@ -48,7 +48,9 @@ function Terminal({screenClick}) {
               <div className="middleDrive">
                 <div className={`floppyInsert ${screenClick}`}></div>
               </div>
-              <div></div>
+              <div>
+                <button className='ejectButton' onClick={ejectClick}>Eject</button>
+              </div>
             </div>
           </div>
         </div>
