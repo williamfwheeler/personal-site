@@ -144,11 +144,26 @@ path.outer3 {
 
 @media (max-width:400px) {
 
+    .hero {
+        height: 90vh;
+    }
+
+    .hero h1 {
+        position: relative;
+        bottom: 10%;
+        margin-left: 40px;
+        font-size: 4rem;
+    }
+
+    .hero h1 > p {
+        font-size: 1.5rem;
+    }
+
     .floppyContainer {
         /* position: relative; */
         grid-template-columns: repeat(auto-fill,80px);
         gap: 20px;
-        top: 33%;
+        top: 31.5%;
         right: 2%;
     }
 }

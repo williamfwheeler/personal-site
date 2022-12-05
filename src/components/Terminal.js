@@ -1,8 +1,9 @@
 import './terminal.css'
 import Screen from './Screen';
 import React,{useState} from 'react';
+import Floppy from "./Floppy";
 
-function Terminal({screenClick,ejectClick}) {
+function Terminal({screenClick,ejectClick,floppyClick}) {
 
   const [scrollClass,setScrollClass] = useState('beforeScroll');
 
@@ -53,6 +54,11 @@ function Terminal({screenClick,ejectClick}) {
               </div>
             </div>
           </div>
+          {/* <div className='diskArray'>
+            <Floppy floppyName={"floppy1a noHover"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
+            <Floppy floppyName={"floppy2a noHover"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
+            <Floppy floppyName={"floppy3a noHover"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
+          </div> */}
         </div>
       </div>
     </div>

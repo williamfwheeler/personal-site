@@ -91,12 +91,11 @@
     border: solid var(--mainBlack) 10px;
 }
 
-
+/* DISK DRIVE */
 
 .terminalHardware {
     display: flex;
     flex-direction: column;
-    
 }
 
 .mug {
@@ -104,8 +103,12 @@
     /* background-color: black; */
 }
 
+.diskArray {
+    display: none;
+}
+
 .diskDrive {
-    flex: 1;
+    flex: 0.8;
     background-color: var(--agedComputer);
     border-radius: 30px;
     display: flex;
@@ -128,6 +131,8 @@
     flex: 1;
     background-color: var(--mainBlack);
     border: var(--agedComputer) 12px solid;
+    width: min(200px);
+    height: min(20px);
     border-radius: 8px;
     margin-left: 20px;
     margin-right: 20px;
@@ -150,10 +155,121 @@
 }
 
 
+/* FLOPPY ARRAY */
+
+.floppy1a .mainFill, .floppy1a .bottomFill {
+    fill: var(--floppyRed);
+}
+
+.floppy1a .mainOutline, .floppy1a .bottomOutline, .floppy1a .topOutline {
+    fill: var(--floppyDarkRed);
+}
+
+.floppy2a .mainFill, .floppy2a .bottomFill {
+    fill: var(--floppyYellow);
+}
+
+.floppy2a .mainOutline, .floppy2a .bottomOutline, .floppy2a .topOutline {
+    fill: var(--floppyDarkYellow)
+}
+
+.floppy3a .mainFill, .floppy3a .bottomFill {
+    fill: var(--floppyBlue);
+}
+
+.floppy3a .mainOutline, .floppy3a .bottomOutline, .floppy3a .topOutline {
+    fill: var(--mainBlack);
+}
+
+
 /* .driveInset > div {
     border: solid orange 1px;
 } */
 
-/* .terminalContainer > * {
+@media (max-width:1400px) {
+
+    .terminal {
+        padding: 20px;
+    }
+    
+    .terminalContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1fr;
+        margin:  30px;
+        column-gap: 40px;
+    }
+
+    .screen {
+        margin: max(25px);
+        border: solid var(--mainBlack) 7px;
+    }
+    
+    .mug {
+        display: none;
+    }
+
+    .screenShell {
+        background-color: var(--agedComputer);
+        height: 54vh;
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .terminalHardware {
+        display: flex;
+        flex-direction: row;
+        justify-content:center
+    }
+
+    .diskDrive {
+        margin: 15px;
+    }
+
+    .driveInset {
+        margin: 15px;
+        grid-template-rows: 1fr 4fr 1fr;
+    }
+
+    .diskArray {
+        display: block;
+    }
+
+    
+}
+
+@media (max-width:600px) {
+    .terminal {
+        padding: 0px;
+    }
+    
+    .terminalContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2.1fr 1fr;
+        margin:  5px;
+        column-gap: 40px;
+    }
+
+    .screen {
+        margin: max(20px);
+    }
+
+    .screenShell {
+        height: 58vh;
+    }
+
+    .diskDrive {
+        margin: 10px;
+    }
+
+    .driveInset {
+        margin: 15px;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+}
+
+/* .terminal * {
     border: solid coral 1px;
 } */
+

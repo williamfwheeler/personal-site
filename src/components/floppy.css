@@ -14,6 +14,11 @@ button.floppy {
 }
 
 
+.floppy {
+    background: transparent;
+}
+
+
 .floppy:hover {
     width: max(220px);
 }

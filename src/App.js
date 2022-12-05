@@ -30,7 +30,7 @@ function App() {
       <Nav />
       <div className='bodyContainer'>
         <Hero floppyClick={handleScreenChoice}/>
-        <Terminal screenClick={screenChoice} ejectClick={handleEject}/>
+        <Terminal screenClick={screenChoice} ejectClick={handleEject} floppyClick={handleScreenChoice}/>
         {/* <About /> */}
         <Footer />
       </div>
