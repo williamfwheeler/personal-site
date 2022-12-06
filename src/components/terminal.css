@@ -22,6 +22,7 @@
     scroll-margin-top: 30px;
 }
 
+
 .terminal.beforeScroll {
     background-color: var(--offWhite);
     transition: 500ms;
@@ -354,6 +355,13 @@ button.ejectButton.middle{
     button.ejectButton.middle {
         display: none;
     }
+}
+
+@media (max-width: 400px) {
+
+.terminal.skillsClick {
+    height: auto;
+}
 }
 
 

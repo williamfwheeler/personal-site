@@ -1,7 +1,9 @@
 .projects {
     height: 30vh;
-    background-color: var(--offWhite);
+    background-color: var(--computerDarkBorder);
+    border-radius: 25px;
     padding: max(40px);
+    color: var(--terminalText);
 }
 
 .projectsHeader {
@@ -12,7 +14,7 @@
 
 .projectsHeader hr {
     flex:1;
-    border: 3px solid black;
+    border: 3px dashed var(--terminalText);
     margin: 15px;
     transform: skew(-30deg);
 }

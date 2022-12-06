@@ -124,6 +124,25 @@
 
 @media (max-width: 775px) {
 
+    .skillContainer {
+        padding: 30px;
+    }
+
+    .skillsHeader {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .skillsHeader hr {
+        margin: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .skillBucketContainer {
+        padding: 0px;
+    }
+
     .skillBox {
         padding: max(20px);
         grid-template-columns: repeat(auto-fill,40px);
@@ -147,25 +166,41 @@
 
 @media (max-width: 400px) {
 
+    .skillsHeader {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .skillsHeader hr {
+        /* CHANGE ME FROM 15px */
+        margin: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 
     .skillContainer {
         padding: max(0px);
         color: var(--terminalText);
     }
 
+    .skillContainer h1 {
+        font-size: 1.8rem;
+    }
+
     .skillBucketContainer {
-        display: flex;
+        display: block;
+        /* display: flex; */
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 0px;
     }
 
-
     .skillBox {
-        padding: max(20px);
-        grid-template-columns: repeat(auto-fill,30px);
-        gap: 10px;
+        padding: max(10px);
+        grid-template-columns: repeat(auto-fill,40px);
+        gap: 30px;
+        margin: 7px;
         
     }
 
@@ -178,7 +213,7 @@
     }
 
     .skillItem svg {
-        width: max(30px);
+        width: max(40px);
     }
 
     .skillBucketContainer {

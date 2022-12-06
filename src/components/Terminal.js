@@ -21,7 +21,7 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
 
 
   return (
-    <div className={`terminal ${scrollClass}`} id="floppyClick">
+    <div className={`terminal ${scrollClass} ${screenClick}`} id="floppyClick">
       <div className="terminalHeader">
         <h1>Terminal</h1>
         <hr></hr>

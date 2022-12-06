@@ -7,7 +7,7 @@ import Terminal from './components/Terminal';
 
 function App() {
 
-  const [screenChoice,setScreenChoice] = useState("");
+  const [screenChoice,setScreenChoice] = useState("blank");
 
   const handleScreenChoice = (choice) => {
     if (choice === "ABOUT") {
@@ -22,14 +22,14 @@ function App() {
   }
 
   const handleEject = () => {
-    setScreenChoice("");
+    setScreenChoice("blank");
   }
 
   return (
     <div className="App">
       <Nav />
       <div className='bodyContainer'>
-        <Hero floppyClick={handleScreenChoice}/>
+        <Hero floppyClick={handleScreenChoice} screenClick={screenChoice}/>
         <Terminal screenClick={screenChoice} ejectClick={handleEject} floppyClick={handleScreenChoice}/>
         {/* <About /> */}
         <Footer />

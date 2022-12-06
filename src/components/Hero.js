@@ -3,7 +3,7 @@ import './hero.css';
 import stripeIllustration from '../assets/stripeIllustration.svg';
 import Floppy from "./Floppy";
 
-function Hero({floppyClick}) {
+function Hero({floppyClick,screenClick}) {
 
     return (
         <div className="hero">
