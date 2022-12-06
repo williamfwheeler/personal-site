@@ -2,12 +2,15 @@ import './floppy.css';
 
 function Floppy({floppyName,labelInfo,xPercent,optionClick}) {
 
+    const terminalRef = document.getElementById('floppyClick');
+
     const handleClick = (e) => {
-        window.scrollTo({
-            behavior: 'smooth',
-            top:984
-            });
+        // window.scrollTo({
+        //     behavior: 'smooth',
+        //     top:984
+        //     });
         optionClick(labelInfo);
+        terminalRef.scrollIntoView({behavior: "smooth"});;
     }
 
     return (
