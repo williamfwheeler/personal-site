@@ -9,7 +9,8 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
   const [scrollClass,setScrollClass] = useState('beforeScroll');
 
   const listenScrollEvent = (e) => {
-    if (window.scrollY > 800) {
+    // previously 800
+    if (window.scrollY > 600) {
       setScrollClass('afterScroll');
     } else {
         setScrollClass('beforeScroll');

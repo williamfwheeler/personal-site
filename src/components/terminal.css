@@ -74,7 +74,7 @@
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     margin:  30px;
-    margin-top: 50px;
+    margin-top: 30px;
     column-gap: 40px;
     height: 85%;
 }
@@ -314,6 +314,23 @@ button.ejectButton.middle{
         grid-template-rows: 1fr 2fr 1fr;
     }
 
+    .floppyInsert {
+        border: var(--agedComputer) 6px solid;
+        /* width: min(200px); */
+        height: min(15px);
+        border-radius: 2px;
+    }
+
+    .ejectButton img {
+        width: 20px;
+    }
+
+    button.ejectButton.top {
+        top: 10px;
+        border-radius: 5px;
+        height: 30px;
+    }
+
     button.ejectButton.top {
         display: block;
     }
@@ -322,6 +339,17 @@ button.ejectButton.middle{
         display: none;
     }
 }
+
+/* @media (max-width:400px) {
+    
+    .terminal {
+        background-color: var(--carpetGreen);
+    }
+} */
+
+
+
+
 
 /* .terminal * {
     border: solid coral 1px;

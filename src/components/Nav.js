@@ -14,7 +14,7 @@ function Nav() {
     }
 
     const listenScrollEvent = (e) => {
-        if (window.scrollY > 800) {
+        if (window.scrollY > 600) {
           setScrollClass('afterScroll');
         } else {
             setScrollClass('beforeScroll');
