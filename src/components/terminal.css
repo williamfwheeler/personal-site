@@ -1,5 +1,5 @@
 .terminal {
-    height: 90vh;
+    height: 95vh;
     /* background-color: var(--offWhite); */
     background-color: var(--carpetGreen);
     padding: max(40px);
@@ -73,12 +73,20 @@
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     margin:  30px;
+    margin-top: 50px;
     column-gap: 40px;
+    height: 85%;
+}
+
+.terminalScreen {
+    display: flex;
+    flex-direction: row;
 }
 
 .screenShell {
+    flex: 1;
     background-color: var(--agedComputer);
-    height: 75vh;
+    /* height: 80vh; */
     border-radius: 30px;
     display: flex;
 }
@@ -120,24 +128,23 @@
     margin: 20px;
     border-radius: 15px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .middleDrive {
     display: flex;
+    align-items: center;
+    justify-items: space-between;
 }
 
 .floppyInsert {
     flex: 1;
     background-color: var(--mainBlack);
     border: var(--agedComputer) 12px solid;
-    width: min(200px);
+    /* width: min(200px); */
     height: min(20px);
     border-radius: 8px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top:30px ;
-    margin-bottom:30px ;
 }
 
 .floppyInsert.aboutClick {
@@ -153,6 +160,38 @@
 .floppyInsert.projectsClick {
     background-color: var(--floppyBlue);
 }
+
+.topDrive {
+    display: grid;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.ejectButton img {
+    background: transparent;
+    border: none;
+    width: 30px;
+    border-radius: 5px;
+}
+
+button.ejectButton.top {
+    display: none;
+    position: relative;
+    top: 8px;
+    background: var(--mainBlack);
+    border: 3px solid var(--agedComputer);
+    border-radius: 5px;
+}
+
+button.ejectButton.middle{
+    background: var(--mainBlack);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 3%;
+    border: 3px solid var(--agedComputer);
+    border-radius: 5px;
+}
+
 
 
 /* FLOPPY ARRAY */
@@ -193,11 +232,12 @@
     }
     
     .terminalContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.8fr 1fr;
-        margin:  30px;
-        column-gap: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .terminalScreen {
+        flex: 3;
     }
 
     .screen {
@@ -210,25 +250,32 @@
     }
 
     .screenShell {
+        flex: 1;
         background-color: var(--agedComputer);
-        height: 54vh;
+        height: auto;
         border-radius: 30px;
         display: flex;
     }
 
+    .screen {
+        flex: 1;
+    }
+
     .terminalHardware {
+        flex: 1;
         display: flex;
         flex-direction: row;
-        justify-content:center
+        justify-content:center;
     }
 
     .diskDrive {
+        flex: 0.5;
         margin: 15px;
     }
 
     .driveInset {
         margin: 15px;
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 15fr 1fr;
     }
 
     .diskArray {
@@ -239,24 +286,22 @@
 }
 
 @media (max-width:600px) {
+    
+    .terminalHeader {
+        display: none;
+    }
     .terminal {
         padding: 0px;
+        padding-top: 30px;
     }
     
     .terminalContainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2.1fr 1fr;
         margin:  5px;
-        column-gap: 40px;
+        height: 90%;
     }
 
     .screen {
         margin: max(20px);
-    }
-
-    .screenShell {
-        height: 58vh;
     }
 
     .diskDrive {
@@ -266,6 +311,14 @@
     .driveInset {
         margin: 15px;
         grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    button.ejectButton.top {
+        display: block;
+    }
+
+    button.ejectButton.middle {
+        display: none;
     }
 }
 

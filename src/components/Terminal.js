@@ -2,6 +2,7 @@ import './terminal.css'
 import Screen from './Screen';
 import React,{useState} from 'react';
 import Floppy from "./Floppy";
+import eject from '../assets/eject.svg'
 
 function Terminal({screenClick,ejectClick,floppyClick}) {
 
@@ -45,12 +46,18 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
           <div className='mug'></div>
           <div className='diskDrive'>
             <div className='driveInset'>
-              <div></div>
+              <div className='topDrive'>
+                <button className='ejectButton top' onClick={ejectClick}>
+                  <img src={eject} alt="eject button" />
+                </button>
+              </div>
               <div className="middleDrive">
                 <div className={`floppyInsert ${screenClick}`}></div>
+                <button className='ejectButton middle' onClick={ejectClick}>
+                  <img src={eject} alt="eject button" />
+                </button>
               </div>
               <div>
-                <button className='ejectButton' onClick={ejectClick}>Eject</button>
               </div>
             </div>
           </div>
