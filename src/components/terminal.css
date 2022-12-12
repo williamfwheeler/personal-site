@@ -108,6 +108,7 @@
     border-radius: 30px;
     display: flex;
     box-shadow: 5px 5px;
+    border: solid var(--mainBlack) 1px;
 }
 
 .screen {
@@ -140,6 +141,7 @@
     border-radius: 30px;
     display: flex;
     box-shadow: 4px 4px;
+    border: solid var(--mainBlack) 2px;
 }
 
 .driveInset {
@@ -361,17 +363,46 @@ button.ejectButton.middle{
 
 @media (max-width: 400px) {
 
-.terminal.skillsClick {
-    height: auto;
-}
-}
-
-/* @media (max-width:400px) {
-    
-    .terminal {
-        background-color: var(--carpetGreen);
+    .terminal.skillsClick {
+        height: auto;
     }
-} */
+
+    .driveInset {
+        margin: 15px;
+        grid-template-rows: 1fr;
+    }
+
+    .floppyInsert {
+        margin: 8px;
+    }
+
+    .topDrive, .bottomDrive {
+        display: none;
+    }
+
+    button.ejectButton.top {
+        display: none;
+    }
+
+    button.ejectButton.middle {
+        display: block;
+    }
+
+
+    .diskDrive {
+        height: 100px;
+        margin: 7px;
+    }
+
+    .driveInset {
+        padding: 0px;
+    }
+
+    .middleDrive {
+        padding: 0px;
+        margin: 0px;
+    }
+    }
 
 
 
