@@ -107,7 +107,7 @@ path.outer3 {
     fill: var(--mainBlack);
 }
 
-@media (max-width:1400px) {
+@media (max-width:1500px) {
 
     .hero > .illustrationContainer {
         background-position: 20%;
@@ -120,7 +120,7 @@ path.outer3 {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
 
     .hero > .illustrationContainer {
         background-position: 30%;
