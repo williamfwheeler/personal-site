@@ -58,7 +58,7 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
                   <img src={eject} alt="eject button" />
                 </button>
               </div>
-              <div>
+              <div className='bottomDrive'>
               </div>
             </div>
           </div>

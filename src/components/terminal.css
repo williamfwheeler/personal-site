@@ -107,6 +107,7 @@
     /* height: 80vh; */
     border-radius: 30px;
     display: flex;
+    box-shadow: 5px 5px;
 }
 
 .screen {
@@ -138,6 +139,7 @@
     background-color: var(--agedComputer);
     border-radius: 30px;
     display: flex;
+    box-shadow: 4px 4px;
 }
 
 .driveInset {
@@ -363,7 +365,6 @@ button.ejectButton.middle{
     height: auto;
 }
 }
-
 
 /* @media (max-width:400px) {
     

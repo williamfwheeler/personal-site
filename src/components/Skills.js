@@ -10,7 +10,7 @@ function Skills() {
                 <hr></hr>
             </div>
             <div className="skillBucketContainer">
-                <div className="skillBucket">
+                <div className="skillBucket frontEnd">
                     <h1>Front End</h1>
                     <div className="skillBox">
                         <div className="skillItem">
@@ -56,7 +56,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="skillBucket">
+                <div className="skillBucket backEnd">
                     <h1>Back End</h1>
                     <div className="skillBox">
                         <div className="skillItem">
@@ -97,7 +97,7 @@ function Skills() {
                         </div>
                     </div>
                 </div>
-                <div className="skillBucket">
+                <div className="skillBucket misc">
                     <h1>Misc.</h1>
                     <div className="skillBox">
                         <div className="skillItem">
