@@ -226,10 +226,17 @@ button.ejectButton.middle{
     font-size: 5rem;
     font-weight: 900;
 }
+
+#floppyArrayButton button {
+    /* height: 90px; */
+    /* border: solid red 3px; */
+    height: 200px;
+}
+
 #floppyArrayButton > .floppy {
     pointer-events: none;
     position: absolute;
-    top: 15%;
+    top: 5%;
     bottom: 30%;
     right: 30%;
     left: 15%;
@@ -249,17 +256,17 @@ button.ejectButton.middle{
 }
 
 #floppyArrayButton > .floppy.arrayClicked{
-    top: -550px;
+    top: -250px;
     pointer-events: all;
 }
 
 #floppyArrayButton > :nth-child(1).arrayClicked {
     left: -200px;
-    top: 0px;
+    top: 20px;
 }
 
 #floppyArrayButton > :nth-child(2).arrayClicked {
-    top: -400px;
+    top: -180px;
     left: -150px;
 }
 
@@ -453,6 +460,30 @@ button.ejectButton.middle{
     .middleDrive {
         padding: 0px;
         margin: 0px;
+    }
+
+    #floppyArrayButton {
+        font-size: 2rem;
+    }
+
+    #floppyArrayButton > .floppy.arrayClicked{
+        top: -180px;
+        pointer-events: all;
+        transform: scale(150%);
+    }
+    
+    #floppyArrayButton > :nth-child(1).arrayClicked {
+        left: -150px;
+        top: 20px;
+    }
+    
+    #floppyArrayButton > :nth-child(2).arrayClicked {
+        top: -140px;
+        left: -150px;
+    }
+
+    #floppyArrayButton button {
+        height: 90px;
     }
     }
 
