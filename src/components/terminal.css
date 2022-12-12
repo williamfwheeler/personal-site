@@ -128,7 +128,6 @@
 
 .mug {
     flex: 1.1;
-    /* background-color: black; */
 }
 
 .diskArray {
@@ -214,6 +213,55 @@ button.ejectButton.middle{
     border-radius: 5px;
 }
 
+/* FLOPPY BUTTON */
+#floppyArrayButton {
+    flex: 0.3;
+    display: none;
+    background-color: transparent;
+    /* border: pink 2px dashed; */
+    border: none;
+    margin: 0px;
+    position: relative;
+    color: var(--offWhite);
+    font-size: 5rem;
+    font-weight: 900;
+}
+#floppyArrayButton > .floppy {
+    pointer-events: none;
+    position: absolute;
+    top: 15%;
+    bottom: 30%;
+    right: 30%;
+    left: 15%;
+    transform: rotate(-30deg);
+}
+
+#floppyArrayButton > :nth-child(1) {
+    transform: rotate(-20deg);
+    right: 20%;
+    left: 5%;
+}
+
+#floppyArrayButton > :nth-child(2) {
+    transform: rotate(-40deg);
+    right: 40%;
+    left: 25%;
+}
+
+#floppyArrayButton > .floppy.arrayClicked{
+    top: -550px;
+    pointer-events: all;
+}
+
+#floppyArrayButton > :nth-child(1).arrayClicked {
+    left: -200px;
+    top: 0px;
+}
+
+#floppyArrayButton > :nth-child(2).arrayClicked {
+    top: -400px;
+    left: -150px;
+}
 
 
 /* FLOPPY ARRAY */
@@ -288,6 +336,10 @@ button.ejectButton.middle{
         display: flex;
         flex-direction: row;
         justify-content:center;
+    }
+
+    #floppyArrayButton {
+        display: block;
     }
 
     .diskDrive {

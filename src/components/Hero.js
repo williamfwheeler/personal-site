@@ -1,6 +1,5 @@
 import React from "react";
 import './hero.css';
-import stripeIllustration from '../assets/stripeIllustration.svg';
 import Floppy from "./Floppy";
 
 function Hero({floppyClick,screenClick}) {

@@ -55,7 +55,7 @@ button.floppy {
     fill: var(--floppyDarkRed);
 } */
 
-@media (max-width:1500px) {
+@media (max-width:1600px) {
     .floppy {
         width: 150px;
     }

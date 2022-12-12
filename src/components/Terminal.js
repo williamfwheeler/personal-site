@@ -17,6 +17,18 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
     }
   }
 
+  const [floppyArrayClicked, setFloppyArrayClicked] = useState("");
+
+  const handleFloppyClick = () => {
+    // add class to splay out click options
+    if (floppyArrayClicked==="arrayClicked") {
+      setFloppyArrayClicked("")
+    }
+    else {
+      setFloppyArrayClicked("arrayClicked");
+    }
+  }
+
   window.addEventListener('scroll',listenScrollEvent)
 
 
@@ -44,7 +56,13 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
           </div>
         </div>
         <div className='terminalHardware'>
-          <div className='mug'></div>
+          <div className='mug'>
+            <div className='mugDiskContainer'>
+                <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
+                <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
+                <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
+            </div>
+          </div>
           <div className='diskDrive'>
             <div className='driveInset'>
               <div className='topDrive'>
@@ -62,6 +80,12 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
               </div>
             </div>
           </div>
+          <button id='floppyArrayButton' onClick={handleFloppyClick}>
+            X
+                <Floppy floppyName={`floppy1 ${floppyArrayClicked}`} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
+                <Floppy floppyName={`floppy2 ${floppyArrayClicked}`} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
+                <Floppy floppyName={`floppy3 ${floppyArrayClicked}`} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
+            </button>
           {/* <div className='diskArray'>
             <Floppy floppyName={"floppy1a noHover"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
             <Floppy floppyName={"floppy2a noHover"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
