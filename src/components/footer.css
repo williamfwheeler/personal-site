@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--computerDarkBorder);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    gap: 20px;
+}
+
+
+.footerIcon a {
+    flex: 1;
+}
+
+.footerIcon img {
+    width: 40px;
+}
