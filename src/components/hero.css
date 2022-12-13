@@ -1,11 +1,181 @@
 .hero {
-    height:30vh;
+    height:100vh;
+    background-color: var(--offWhite);
+    /* border: blue solid 3px; */
+    display: grid;
+    align-content: center;
+    text-align: center;
+    width: 100%;
 }
 
-img {
-    width: 40vw;
+.hero > .illustrationContainer {
+    background-image: url("../assets/stripeIllustration.svg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+} 
+
+.hero .stripeIllustration {
+    /* width: 100%;
+    height: 470px; */
+    /* transform: scale(100%); */
 }
 
-svg {
-    width: 40vw;
+.hero h1 {
+    position: relative;
+    font-size: 3rem;
 }
+
+.hero h1 > p {
+    font-size: 2rem;
+}
+
+/* STRIPE ILLUSTRATION (DEPRECATED) */
+
+/* path.main {
+    stroke: var(--mainDarkBlue);
+    stroke-width: 50px;
+}
+
+path.outer1 {
+    stroke: var(--mainNavy);
+    stroke-width: 50px;
+}
+
+path.outer2 {
+    stroke: var(--mainRedOrange);
+    stroke-width: 50px;
+}
+
+path.outer3 {
+    stroke: var(--mainOrange);
+    stroke-width: 50px;
+} */
+/* FLOPPY CONTAINER */
+
+.floppyContainer {
+    position: absolute;
+    right: 2%;
+    top: 28%;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(auto-fill,200px);
+    gap: 60px;
+}
+
+/* FLOPPY FORMATTING BELOW */
+
+.floppy.floppy1 {
+    /* right: 35%;
+    top: 30%; */
+    transform: rotate(10deg);
+}
+
+.floppy.floppy2 {
+    /* right: 22%;
+    top: 30%; */
+    transform: rotate(10deg);
+}
+
+.floppy.floppy3 {
+    /* right: 9%;
+    top: 30%; */
+    transform: rotate(10deg);
+}
+
+.floppy1 .mainFill, .floppy1 .bottomFill {
+    fill: var(--floppyRed);
+}
+
+.floppy1 .mainOutline, .floppy1 .bottomOutline, .floppy1 .topOutline {
+    fill: var(--floppyDarkRed);
+}
+
+.floppy2 .mainFill, .floppy2 .bottomFill {
+    fill: var(--floppyYellow);
+}
+
+.floppy2 .mainOutline, .floppy2 .bottomOutline, .floppy2 .topOutline {
+    fill: var(--floppyDarkYellow)
+}
+
+.floppy3 .mainFill, .floppy3 .bottomFill {
+    fill: var(--floppyBlue);
+}
+
+.floppy3 .mainOutline, .floppy3 .bottomOutline, .floppy3 .topOutline {
+    fill: var(--mainBlack);
+}
+
+@media (max-width:1500px) {
+
+    .hero > .illustrationContainer {
+        background-position: 20%;
+    } 
+
+    .floppyContainer {
+        grid-template-columns: repeat(auto-fill,150px);
+        gap: 40px;
+        right: 0%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .hero > .illustrationContainer {
+        background-position: 30%;
+        height: 50vh;
+    } 
+
+    .hero h1 {
+        position: relative;
+        bottom: 10%;
+        text-align: left;
+        margin-left: 40px;
+        font-size: 4rem;
+    }
+
+    .floppyContainer {
+        grid-template-columns: repeat(auto-fill,110px);
+        gap: 20px;
+        right: 2%;
+    }
+}
+
+@media (max-width:400px) {
+
+    .hero {
+        height: 90vh;
+    }
+
+    .hero h1 {
+        position: relative;
+        bottom: 35%;
+        margin-left: 40px;
+        font-size: 3rem;
+    }
+
+    .hero h1 > p {
+        font-size: 1.5rem;
+    }
+
+    .hero > .illustrationContainer {
+        position: relative;
+        bottom: 15%;
+        background-position: 30%;
+        height: 50vh;
+    } 
+
+    .floppyContainer {
+        /* position: relative; */
+        grid-template-columns: repeat(auto-fill,80px);
+        gap: 20px;
+        top: 27%;
+        right: 6%;
+    }
+}
+
+
+/* .hero * {
+    border: solid red 1px;
+} */

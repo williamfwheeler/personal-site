@@ -1,6 +1,6 @@
 .skillContainer {
     padding: max(40px);
-    background-color: #7bf2da;
+    color: var(--terminalText);
 }
 
 .skillsHeader {
@@ -9,60 +9,320 @@
     width: 100%;
 }
 
+h1.skillsMobile {
+    display: none;
+}
+
 .skillsHeader hr {
     flex:1;
-    border: 3px solid black;
+    border: 3px dashed var(--terminalText);
     margin: 15px;
+    transform: skew(-30deg);
 }
 
 .skillBucketContainer {
     display: flex;
     justify-content: center;
-    column-gap: max(100px);
-    padding: max(60px);
+    align-items: center;
+    /* column-gap: max(40px); */
+    column-gap: 3%;
+    padding-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.skillBucketContainer.mobile {
+    display: none;
 }
 
 .skillBucket {
     flex: 1;
-    /* width: max(400px); */
 }
 
 .skillBucket > h1 {
+    padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .skillBox {
-    border: solid grey 3px;
-    background-color: grey;
-    border-radius: 15px;
-    padding: max(30px);
+    border: dashed var(--terminalText) 3px;
+    border-radius: 5px;
+    padding: max(20px);
     display: grid;
-    grid-template-columns: repeat(auto-fill,110px);
+    grid-template-columns: repeat(auto-fill,70px);
     justify-content: center;
-    gap: 10px;
+    justify-items: center;
+    gap: 40px;
     row-gap: 20px;
     
 }
 
 .skillItem {
     padding: 8px;
-    color: white;
-    /* border: solid 1px orange; */
+    color: var(--terminalText);
 }
 
-.skillItem:hover {
-    
+.skillItem svg path, .skillItem svg circle {
+    fill: var(--terminalText);
+}
+
+.skillItem svg path.lettering{
+    fill: var(--computerDarkBorder);
 }
 
 .skillItem h3 {
-    font-size: 20px;
+    font-size: 13px;
 }
 
 
 .skillItem svg {
-    width: max(60px);
+    width: max(70px);
+    transition: 100ms;
 }
 
-/* * {
-    border: solid black 1px;
-} */
+
+@media (max-width: 1400px) {
+
+    .skillBox {
+        border: dashed var(--terminalText) 3px;
+        padding: max(20px);
+        display: grid;
+        grid-template-columns: repeat(auto-fill,70px);
+        gap: 20px;
+        
+    }
+
+    /* .skillItem {
+        padding: 8px;
+    }
+
+    .skillItem h3 {
+        font-size: 13px;
+    }
+
+    .skillItem svg {
+        width: max(70px);
+    } */
+
+}
+
+@media (max-width: 905px) {
+
+    .skillBox {
+        padding: max(20px);
+        grid-template-columns: repeat(auto-fill,55px);
+        gap: 10px;
+        
+    }
+
+    .skillItem {
+        padding: 4px;
+    }
+
+    .skillItem h3 {
+        font-size: 13px;
+    }
+
+    .skillItem svg {
+        width: max(55px);
+    }
+
+}
+
+@media (max-width: 775px) {
+
+    .skillContainer {
+        padding: 30px;
+    }
+
+    .skillsHeader {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .skillsHeader hr {
+        margin: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .skillBucketContainer {
+        padding: 0px;
+    }
+
+    .skillBox {
+        padding: max(20px);
+        grid-template-columns: repeat(auto-fill,40px);
+        gap: 10px;
+        
+    }
+
+    .skillItem {
+        padding: 4px;
+    }
+
+    .skillItem h3 {
+        font-size: 13px;
+    }
+
+    .skillItem svg {
+        width: max(40px);
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .skillsHeader {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .skillsHeader hr {
+        margin: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .skillContainer {
+        padding: max(0px);
+        color: var(--terminalText);
+    }
+
+    .skillContainer h1 {
+        font-size: 1.8rem;
+    }
+
+    .skillBucketContainer {
+        display: block;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .skillBox {
+        padding: max(10px);
+        grid-template-columns: repeat(auto-fill,40px);
+        gap: 30px;
+        margin: 7px;
+        
+    }
+
+    .skillItem {
+        padding: 4px;
+    }
+
+    .skillItem h3 {
+        font-size: 13px;
+    }
+
+    .skillItem svg {
+        width: max(40px);
+    }
+
+    .skillBucketContainer {
+        margin: 0px;
+    }
+
+    /* MOBILE DISPLAY */
+
+    .skillBucketContainer {
+        display: none;
+    }
+
+    .skillBucketContainer.mobile {
+        display: block;
+        position: relative;
+    }
+
+    .skillsButtonHolder {
+        margin: 20px;
+        display: grid;
+        row-gap: 20px;
+
+    }
+
+    .skillBucketContainer.mobile button {
+        background-color: var(--computerDarkBorder);
+        color: var(--terminalText);
+        border: dotted 2px var(--terminalText);
+    }
+
+    .skillBucketContainer.mobile button.highlighter {
+        background-color: var(--terminalText);
+        color: var(--computerDarkBorder);
+        border: solid 2px var(--terminalText);
+    }
+
+    .skillBucketContainer.mobile.hidden {
+        display: none;
+    }
+
+    .skillBucket.mobile {
+        display: none;
+    }
+
+    /* ON MOBILE CLICK */
+
+    .skillsWide.showFE, .skillsWide.showBE, .skillsWide.showMisc {
+        display: none;
+    }
+
+    h1.skillsMobile.frontEnd.showFE {
+        display: block;
+    }
+
+    h1.skillsMobile.backEnd.showBE {
+        display: block;
+    }
+
+    h1.skillsMobile.misc.showMisc {
+        display: block;
+    }
+
+    .skillBucket.frontEnd.mobile.showFE {
+        display: block;
+    }
+
+    .skillBucket.backEnd.mobile.showBE {
+        display: block;
+    }
+
+    .skillBucket.misc.mobile.showMisc {
+        display: block;
+    }
+
+    .skillsButtonHolder.showBE,.skillsButtonHolder.showFE,.skillsButtonHolder.showMisc {
+        display: none;
+    }
+
+    .skillBucket.mobile {
+        margin-top: 20px;
+    }
+
+    /* ON BACK CLICK */
+
+    .skillsBackButton {
+        display: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+        background-color: var(--computerDarkBorder);
+        color: var(--terminalText);
+        border: dotted 2px var(--terminalText);
+        font-size: 2.5rem;
+        font-weight:900;
+    }
+
+    .skillsBackButton.showFE, .skillsBackButton.showBE, .skillsBackButton.showMisc {
+        display: block;
+        position: absolute;
+        bottom: -180px;
+        right: 20px;
+    }
+
+}
+
+* {
+    /* border: solid red 1px; */
+}

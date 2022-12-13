@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline');
+
+.screen * {
+    /* font-family: Orbitron; */
+    font-family: Bungee Outline, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.screen h3 {
+    font-family: Orbitron, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.terminal {
+    height: 95vh;
+    /* background-color: var(--offWhite); */
+    background-color: var(--carpetGreen);
+    padding: max(40px);
+    scroll-margin-top: 30px;
+}
+
+
+.terminal.beforeScroll {
+    background-color: var(--offWhite);
+    transition: 500ms;
+}
+
+
+.terminal.afterScroll {
+    background-color: var(--carpetGreen);
+    transition: 500ms;
+}
+
+.terminalHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--offWhite);
+}
+
+.terminalHeader hr {
+    flex:1;
+    border: 3px solid var(--offWhite);
+    margin: 15px;
+    transform: skew(-30deg);
+}
+
+.stripeContainer {
+    display: flex;
+    column-gap: 5px;
+}
+
+.stripeContainer.line {
+    flex: 1;
+    display: flex;
+    column-gap: 0px;
+    padding-left: 15px;
+}
+
+.stripeContainer.line > .stripe {
+    height: 8px;
+}
+
+.stripe {
+    flex: 1;
+    height: 20px;
+    transform: skew(-30deg);
+}
+
+.stripe.orange {
+    background-color: var(--mainOrange);
+}
+.stripe.redOrange {
+    background-color: var(--mainRedOrange);
+}
+.stripe.navy {
+    background-color: var(--mainNavy);
+}
+.stripe.darkBlue {
+    background-color: var(--mainDarkBlue);
+}
+
+
+
+/* TERMINAL */
+
+.terminalContainer {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    margin:  30px;
+    margin-top: 30px;
+    column-gap: 40px;
+    height: 85%;
+}
+
+.terminalScreen {
+    display: flex;
+    flex-direction: row;
+}
+
+.screenShell {
+    flex: 1;
+    background-color: var(--agedComputer);
+    /* height: 80vh; */
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 5px 5px;
+    border: solid var(--mainBlack) 1px;
+}
+
+.screen {
+    flex:1;
+    margin: max(45px);
+    border-radius: 30px;
+    background-color: var(--computerDarkBorder);
+    border: solid var(--mainBlack) 10px;
+}
+
+/* DISK DRIVE */
+
+.terminalHardware {
+    display: flex;
+    flex-direction: column;
+}
+
+.mug {
+    flex: 1.1;
+}
+
+.diskArray {
+    display: none;
+}
+
+.diskDrive {
+    flex: 0.8;
+    background-color: var(--agedComputer);
+    border-radius: 30px;
+    display: flex;
+    box-shadow: 4px 4px;
+    border: solid var(--mainBlack) 2px;
+}
+
+.driveInset {
+    flex: 1;
+    background-color: rgb(49, 48, 48);
+    margin: 20px;
+    border-radius: 15px;
+    display: grid;
+}
+
+.middleDrive {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.floppyInsert {
+    flex: 1;
+    background-color: var(--mainBlack);
+    border: var(--agedComputer) 12px solid;
+    /* width: min(200px); */
+    height: min(20px);
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.floppyInsert.aboutClick {
+    background-color: var(--floppyRed);
+}
+
+.floppyInsert.skillsClick {
+    background-color: var(--floppyYellow);
+}
+
+.floppyInsert.projectsClick {
+    background-color: var(--floppyBlue);
+}
+
+.floppyInsert.contactClick {
+    background-color: var(--floppyBlue);
+}
+
+.topDrive {
+    display: grid;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.ejectButton img {
+    background: transparent;
+    border: none;
+    width: 30px;
+    border-radius: 5px;
+}
+
+button.ejectButton.top {
+    display: none;
+    position: relative;
+    top: 8px;
+    background: var(--mainBlack);
+    border: 3px solid var(--agedComputer);
+    border-radius: 5px;
+}
+
+button.ejectButton.middle{
+    background: var(--mainBlack);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 3%;
+    border: 3px solid var(--agedComputer);
+    border-radius: 5px;
+}
+
+/* FLOPPY BUTTON */
+#floppyArrayButton {
+    flex: 0.3;
+    display: none;
+    background-color: transparent;
+    /* border: pink 2px dashed; */
+    border: none;
+    margin: 0px;
+    position: relative;
+    color: var(--offWhite);
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+#floppyArrayButton button {
+    /* height: 90px; */
+    /* border: solid red 3px; */
+    height: 200px;
+}
+
+#floppyArrayButton > .floppy {
+    pointer-events: none;
+    position: absolute;
+    top: 5%;
+    bottom: 30%;
+    right: 30%;
+    left: 15%;
+    transform: rotate(-30deg);
+}
+
+#floppyArrayButton > :nth-child(1) {
+    transform: rotate(-20deg);
+    right: 20%;
+    left: 5%;
+}
+
+#floppyArrayButton > :nth-child(2) {
+    transform: rotate(-40deg);
+    right: 40%;
+    left: 25%;
+}
+
+#floppyArrayButton > .floppy.arrayClicked{
+    top: -250px;
+    pointer-events: all;
+}
+
+#floppyArrayButton > :nth-child(1).arrayClicked {
+    left: -200px;
+    top: 20px;
+}
+
+#floppyArrayButton > :nth-child(2).arrayClicked {
+    top: -180px;
+    left: -150px;
+}
+
+
+/* FLOPPY ARRAY */
+
+.floppy1a .mainFill, .floppy1a .bottomFill {
+    fill: var(--floppyRed);
+}
+
+.floppy1a .mainOutline, .floppy1a .bottomOutline, .floppy1a .topOutline {
+    fill: var(--floppyDarkRed);
+}
+
+.floppy2a .mainFill, .floppy2a .bottomFill {
+    fill: var(--floppyYellow);
+}
+
+.floppy2a .mainOutline, .floppy2a .bottomOutline, .floppy2a .topOutline {
+    fill: var(--floppyDarkYellow)
+}
+
+.floppy3a .mainFill, .floppy3a .bottomFill {
+    fill: var(--floppyBlue);
+}
+
+.floppy3a .mainOutline, .floppy3a .bottomOutline, .floppy3a .topOutline {
+    fill: var(--mainBlack);
+}
+
+
+/* .driveInset > div {
+    border: solid orange 1px;
+} */
+
+@media (max-width:1400px) {
+
+    .terminal {
+        padding: 20px;
+    }
+    
+    .terminalContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .terminalScreen {
+        flex: 3;
+    }
+
+    .screen {
+        margin: max(25px);
+        border: solid var(--mainBlack) 7px;
+    }
+    
+    .mug {
+        display: none;
+    }
+
+    .screenShell {
+        flex: 1;
+        background-color: var(--agedComputer);
+        height: auto;
+        border-radius: 30px;
+        display: flex;
+    }
+
+    .screen {
+        flex: 1;
+    }
+
+    .terminalHardware {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    #floppyArrayButton {
+        display: block;
+    }
+
+    .diskDrive {
+        flex: 0.5;
+        margin: 15px;
+    }
+
+    .driveInset {
+        margin: 15px;
+        grid-template-rows: 1fr 15fr 1fr;
+    }
+
+    .diskArray {
+        display: block;
+    }
+
+    
+}
+
+@media (max-width:600px) {
+    
+    .terminalHeader {
+        display: none;
+    }
+    .terminal {
+        padding: 0px;
+        padding-top: 30px;
+    }
+    
+    .terminalContainer {
+        margin:  5px;
+        height: 90%;
+    }
+
+    .screen {
+        margin: max(20px);
+    }
+
+    .diskDrive {
+        margin: 10px;
+    }
+
+    .driveInset {
+        margin: 15px;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .floppyInsert {
+        border: var(--agedComputer) 6px solid;
+        /* width: min(200px); */
+        height: min(15px);
+        border-radius: 2px;
+    }
+
+    .ejectButton img {
+        width: 20px;
+    }
+
+    button.ejectButton.top {
+        top: 10px;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+    button.ejectButton.top {
+        display: block;
+    }
+
+    button.ejectButton.middle {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /* .terminal.skillsClick {
+        height: auto;
+    } */
+
+    .driveInset {
+        margin: 15px;
+        grid-template-rows: 1fr;
+    }
+
+    .floppyInsert {
+        margin: 8px;
+    }
+
+    .topDrive, .bottomDrive {
+        display: none;
+    }
+
+    button.ejectButton.top {
+        display: none;
+    }
+
+    button.ejectButton.middle {
+        display: block;
+    }
+
+
+    .diskDrive {
+        height: 100px;
+        margin: 7px;
+    }
+
+    .driveInset {
+        padding: 0px;
+    }
+
+    .middleDrive {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #floppyArrayButton {
+        font-size: 2rem;
+    }
+
+    #floppyArrayButton > .floppy.arrayClicked{
+        top: -180px;
+        pointer-events: all;
+        transform: scale(150%);
+    }
+    
+    #floppyArrayButton > :nth-child(1).arrayClicked {
+        left: -150px;
+        top: 20px;
+    }
+    
+    #floppyArrayButton > :nth-child(2).arrayClicked {
+        top: -140px;
+        left: -150px;
+    }
+
+    #floppyArrayButton button {
+        height: 90px;
+    }
+    }
+
+
+
+
+
+/* .terminal * {
+    border: solid coral 1px;
+} */
+

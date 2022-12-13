@@ -1,5 +1,37 @@
 .projects {
     height: 30vh;
-    background-color: var(--offWhite);
+    background-color: var(--computerDarkBorder);
+    border-radius: 25px;
     padding: max(40px);
+    color: var(--terminalText);
+}
+
+.projectsHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.projectsHeader hr {
+    flex:1;
+    border: 3px dashed var(--terminalText);
+    margin: 15px;
+    transform: skew(-30deg);
+}
+
+@media (max-width: 775px) {
+    .projects {
+        padding: 20px;
+    }
+
+    .projectsHeader {
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects {
+        padding: 0px;
+    }
 }
