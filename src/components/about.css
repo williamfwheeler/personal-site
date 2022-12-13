@@ -30,6 +30,10 @@
     margin-right: 20px;
 }
 
+.aboutContent > .mobile {
+    display: none;
+}
+
 /* STRIPE FORMATTING */
 
 .stripeContainer {
@@ -87,9 +91,15 @@
         padding: 0px;
     }
 
-    .aboutContent > p {
-        font-size: 0.7rem;
+    .aboutContent > p, .aboutContent > br {
+        /* font-size: 0.7rem; */
+        display: none;
     }
+
+    .aboutContent > .mobile.pageOne {
+        display: block;
+    }
+
 }
 
 
