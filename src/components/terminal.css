@@ -422,9 +422,9 @@ button.ejectButton.middle{
 
 @media (max-width: 400px) {
 
-    .terminal.skillsClick {
+    /* .terminal.skillsClick {
         height: auto;
-    }
+    } */
 
     .driveInset {
         margin: 15px;

@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+h1.skillsMobile {
+    display: none;
+}
+
 .skillsHeader hr {
     flex:1;
     border: 3px dashed var(--terminalText);
@@ -26,6 +30,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+}
+
+.skillBucketContainer.mobile {
+    display: none;
 }
 
 .skillBucket {
@@ -216,8 +224,105 @@
         margin: 0px;
     }
 
+    /* MOBILE DISPLAY */
+
+    .skillBucketContainer {
+        display: none;
+    }
+
+    .skillBucketContainer.mobile {
+        display: block;
+        position: relative;
+    }
+
+    .skillsButtonHolder {
+        margin: 20px;
+        display: grid;
+        row-gap: 20px;
+
+    }
+
+    .skillBucketContainer.mobile button {
+        background-color: var(--computerDarkBorder);
+        color: var(--terminalText);
+        border: dotted 2px var(--terminalText);
+    }
+
+    .skillBucketContainer.mobile button.highlighter {
+        background-color: var(--terminalText);
+        color: var(--computerDarkBorder);
+        border: solid 2px var(--terminalText);
+    }
+
+    .skillBucketContainer.mobile.hidden {
+        display: none;
+    }
+
+    .skillBucket.mobile {
+        display: none;
+    }
+
+    /* ON MOBILE CLICK */
+
+    .skillsWide.showFE, .skillsWide.showBE, .skillsWide.showMisc {
+        display: none;
+    }
+
+    h1.skillsMobile.frontEnd.showFE {
+        display: block;
+    }
+
+    h1.skillsMobile.backEnd.showBE {
+        display: block;
+    }
+
+    h1.skillsMobile.misc.showMisc {
+        display: block;
+    }
+
+    .skillBucket.frontEnd.mobile.showFE {
+        display: block;
+    }
+
+    .skillBucket.backEnd.mobile.showBE {
+        display: block;
+    }
+
+    .skillBucket.misc.mobile.showMisc {
+        display: block;
+    }
+
+    .skillsButtonHolder.showBE,.skillsButtonHolder.showFE,.skillsButtonHolder.showMisc {
+        display: none;
+    }
+
+    .skillBucket.mobile {
+        margin-top: 20px;
+    }
+
+    /* ON BACK CLICK */
+
+    .skillsBackButton {
+        display: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+        background-color: var(--computerDarkBorder);
+        color: var(--terminalText);
+        border: dotted 2px var(--terminalText);
+        font-size: 2.5rem;
+        font-weight:900;
+    }
+
+    .skillsBackButton.showFE, .skillsBackButton.showBE, .skillsBackButton.showMisc {
+        display: block;
+        position: absolute;
+        bottom: -180px;
+        right: 20px;
+    }
+
 }
 
-/* * {
-    border: solid black 1px;
-} */
+* {
+    /* border: solid red 1px; */
+}
