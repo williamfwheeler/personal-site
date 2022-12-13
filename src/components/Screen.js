@@ -1,6 +1,7 @@
 import Skills from "./Skills";
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function Screen({screenInput}) {  
 
@@ -13,6 +14,9 @@ function Screen({screenInput}) {
         }
         else if (screenInput === 'projectsClick') {
             return (<Projects />)
+        }
+        else if (screenInput === 'contactClick') {
+            return (<Contact />)
         }
     }
   

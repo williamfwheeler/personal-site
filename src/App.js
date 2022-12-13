@@ -19,6 +19,9 @@ function App() {
     else if (choice === "SKILLS") {
       setScreenChoice("skillsClick")
     }
+    else if (choice === "CONTACT") {
+      setScreenChoice("contactClick")
+    }
   }
 
   const handleEject = () => {

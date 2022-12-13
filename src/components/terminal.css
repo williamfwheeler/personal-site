@@ -172,13 +172,15 @@
     background-color: var(--floppyRed);
 }
 
-
 .floppyInsert.skillsClick {
     background-color: var(--floppyYellow);
 }
 
-
 .floppyInsert.projectsClick {
+    background-color: var(--floppyBlue);
+}
+
+.floppyInsert.contactClick {
     background-color: var(--floppyBlue);
 }
 

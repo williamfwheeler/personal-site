@@ -60,7 +60,8 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
             <div className='mugDiskContainer'>
                 <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
                 <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
-                <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
+                {/* <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/> */}
+                <Floppy floppyName={"floppy3"} labelInfo={"CONTACT"} xPercent={"14%"} optionClick={floppyClick}/>
             </div>
           </div>
           <div className='diskDrive'>
@@ -84,13 +85,9 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
             X
                 <Floppy floppyName={`floppy1 ${floppyArrayClicked}`} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
                 <Floppy floppyName={`floppy2 ${floppyArrayClicked}`} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
-                <Floppy floppyName={`floppy3 ${floppyArrayClicked}`} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
+                {/* <Floppy floppyName={`floppy3 ${floppyArrayClicked}`} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/> */}
+                <Floppy floppyName={`floppy3 ${floppyArrayClicked}`} labelInfo={"CONTACT"} xPercent={"14%"} optionClick={floppyClick}/>
             </button>
-          {/* <div className='diskArray'>
-            <Floppy floppyName={"floppy1a noHover"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
-            <Floppy floppyName={"floppy2a noHover"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
-            <Floppy floppyName={"floppy3a noHover"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
-          </div> */}
         </div>
       </div>
     </div>

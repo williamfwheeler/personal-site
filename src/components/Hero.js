@@ -15,7 +15,8 @@ function Hero({floppyClick,screenClick}) {
             <div className="floppyContainer">
                 <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>
                 <Floppy floppyName={"floppy2"} labelInfo={"SKILLS"} xPercent={"24%"} optionClick={floppyClick}/>
-                <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/>
+                {/* <Floppy floppyName={"floppy3"} labelInfo={"PROJECTS"} xPercent={"14%"} optionClick={floppyClick}/> */}
+                <Floppy floppyName={"floppy3"} labelInfo={"CONTACT"} xPercent={"14%"} optionClick={floppyClick}/>
             </div>
         </div>
     );
