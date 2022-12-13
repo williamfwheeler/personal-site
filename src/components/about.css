@@ -54,6 +54,23 @@
     background-color: var(--mainDarkBlue);
 }
 
+@media (max-width: 775px) {
+    .about {
+        padding: 20px;
+    }
+
+    .aboutHeader {
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .about {
+        padding: 0px;
+    }
+}
+
 
 /* .about * {
     border: solid black 1px;

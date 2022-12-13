@@ -18,3 +18,20 @@
     margin: 15px;
     transform: skew(-30deg);
 }
+
+@media (max-width: 775px) {
+    .projects {
+        padding: 20px;
+    }
+
+    .projectsHeader {
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .projects {
+        padding: 0px;
+    }
+}
