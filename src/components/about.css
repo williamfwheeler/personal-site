@@ -97,6 +97,7 @@
 
     .aboutContent > .mobile.pageOne {
         display: block;
+        font-size: 1rem;
     }
 
 }
