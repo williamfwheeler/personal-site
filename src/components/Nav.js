@@ -1,8 +1,8 @@
-import React, {useState,useEffect} from "react";
+import React, {useState} from "react";
 import './nav.css';
 import gear from '../assets/gear_image.png';
 
-function Nav() {
+function Nav({floppyClick}) {
 
     const [scrollClass,setScrollClass] = useState('beforeScroll');
 
@@ -23,6 +23,24 @@ function Nav() {
 
     window.addEventListener('scroll',listenScrollEvent)
 
+    const handleClickAbout = () => {
+        floppyClick("ABOUT");
+        const terminalRef = document.getElementById('floppyClick');
+        terminalRef.scrollIntoView({behavior: "smooth"});;
+    }
+
+    const handleClickSkills = () => {
+        floppyClick("SKILLS");
+        const terminalRef = document.getElementById('floppyClick');
+        terminalRef.scrollIntoView({behavior: "smooth"});;
+    }
+
+    const handleClickContact = () => {
+        floppyClick("CONTACT");
+        const terminalRef = document.getElementById('floppyClick');
+        terminalRef.scrollIntoView({behavior: "smooth"});;
+    }
+
     return (
         <div className={`navBar ${scrollClass}`}>
             <button className={`titleButton ${scrollClass}`} onClick={handleHome}>
@@ -31,10 +49,10 @@ function Nav() {
             <button className="homeButton" onClick={handleHome}>
                 <div className="mainLogo"><img src={gear} alt="spinning gear"></img></div>
             </button>
-            <div className="links" hidden="false">
-                <div>About</div>
-                <div>Skills</div>
-                <div>Projects</div>
+            <div className="links">
+                <button onClick={handleClickAbout} className={`${scrollClass}`}>About</button>
+                <button onClick={handleClickSkills} className={`${scrollClass}`}>Skills</button>
+                <button onClick={handleClickContact} className={`${scrollClass}`}>Contact</button>
             </div>
         </div>
     );

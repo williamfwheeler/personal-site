@@ -100,6 +100,19 @@
     margin-right: max(30px);
 }
 
+.links button {
+    background-color: transparent;
+    border: none;
+    font-family: Righteous,-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 1.5rem;
+}
+
+.links button.afterScroll {
+    color: var(--offWhite);
+}
+
 @media (max-width:1400px) {
     .links {
         display: none;

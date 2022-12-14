@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      <Nav floppyClick={handleScreenChoice}/>
       <div className='bodyContainer'>
         <Hero floppyClick={handleScreenChoice} screenClick={screenChoice}/>
         <Terminal screenClick={screenChoice} ejectClick={handleEject} floppyClick={handleScreenChoice}/>
