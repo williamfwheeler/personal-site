@@ -107,6 +107,14 @@ path.outer3 {
     fill: var(--mainBlack);
 }
 
+.floppy3 > text {
+    fill: var(--offWhite);
+}
+
+/* .floppy1 > text {
+    fill: var(--offWhite);
+} */
+
 @media (max-width:1500px) {
 
     .hero > .illustrationContainer {
