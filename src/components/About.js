@@ -1,9 +1,7 @@
-import React, {useState} from "react";
+import React from "react";
 import './about.css';
 
 function About() {
-
-    const [mobilePage,setMobilePage] = useState("");
 
     return (
         <div className="about">
@@ -26,7 +24,7 @@ function About() {
                 <p className="mobile pageOne">William Wheeler is a Fort Worth-based web developer. With a passion for both coding and problem-solving, William uses his background in data analytics and music to create websites that are functional, fun, and visually appealing.  </p>
                 <br className="mobile pageOne"></br>    
                 <p className="mobile ">In his free time, William enjoys making music and reading about the subjects your grandpa probably likes (boats,plants,history). </p>
-                
+
             </div>
         </div>
     );

@@ -38,9 +38,3 @@ function Contact() {
 }
 
 export default Contact;
-
-
-
-
-
-{/* <img src={linkedIn} alt="eject button" /> */}

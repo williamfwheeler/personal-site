@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 .floppy {
-    /* position: absolute; */
-    /* transform: scale(15%); */
-    /* width: 200px; */
     width: 200px;
-    /* transform: scale(70%); */
     transition: 200ms;
 }
 
@@ -28,32 +24,10 @@ button.floppy {
 }
 
 .floppy text {
-    /* fill: var(--mainWhite); */
     font-family: Permanent Marker,'Courier New', Courier, monospace;
     font-size: 70px;
     font-weight: 800;
 }
-
-/* .floppy {
-    position: absolute;
-    transform: scale(40%);
-} */
-
-/* .floppy .mainFill {
-    fill: var(--floppyRed);
-}
-
-.floppy .bottomFill {
-    fill: var(--floppyRed);
-}
-
-.floppy .topFill {
-    fill: var(--offWhite);
-}
-
-.floppy .mainOutline, .floppy .bottomOutline, .floppy .topOutline {
-    fill: var(--floppyDarkRed);
-} */
 
 @media (max-width:1600px) {
     .floppy {

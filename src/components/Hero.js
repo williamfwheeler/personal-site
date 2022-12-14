@@ -10,7 +10,6 @@ function Hero({floppyClick,screenClick}) {
             <p>/ / / / Web Developer</p>
             </h1>
             <div className="illustrationContainer">
-                {/* <img src={stripeIllustration}></img> */}
             </div>
             <div className="floppyContainer">
                 <Floppy floppyName={"floppy1"} labelInfo={"ABOUT"} xPercent={"24%"} optionClick={floppyClick}/>

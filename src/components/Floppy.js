@@ -5,10 +5,7 @@ function Floppy({floppyName,labelInfo,xPercent,optionClick}) {
     
 
     const handleClick = (e) => {
-        // window.scrollTo({
-        //     behavior: 'smooth',
-        //     top:984
-        //     });
+
         optionClick(labelInfo);
 
         const terminalRef = document.getElementById('floppyClick');

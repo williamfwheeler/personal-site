@@ -34,7 +34,6 @@ function App() {
       <div className='bodyContainer'>
         <Hero floppyClick={handleScreenChoice} screenClick={screenChoice}/>
         <Terminal screenClick={screenChoice} ejectClick={handleEject} floppyClick={handleScreenChoice}/>
-        {/* <About /> */}
         <Footer />
       </div>
     </div>

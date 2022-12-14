@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Outline');
 
 .screen * {
-    /* font-family: Orbitron; */
     font-family: Bungee Outline, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,7 +15,6 @@
 
 .terminal {
     height: 95vh;
-    /* background-color: var(--offWhite); */
     background-color: var(--carpetGreen);
     padding: max(40px);
     scroll-margin-top: 30px;
@@ -161,7 +159,6 @@
     flex: 1;
     background-color: var(--mainBlack);
     border: var(--agedComputer) 12px solid;
-    /* width: min(200px); */
     height: min(20px);
     border-radius: 8px;
     margin-left: 20px;
@@ -220,7 +217,6 @@ button.ejectButton.middle{
     flex: 0.3;
     display: none;
     background-color: transparent;
-    /* border: pink 2px dashed; */
     border: none;
     margin: 0px;
     position: relative;
@@ -230,8 +226,6 @@ button.ejectButton.middle{
 }
 
 #floppyArrayButton button {
-    /* height: 90px; */
-    /* border: solid red 3px; */
     height: 200px;
 }
 
@@ -299,10 +293,6 @@ button.ejectButton.middle{
     fill: var(--mainBlack);
 }
 
-
-/* .driveInset > div {
-    border: solid orange 1px;
-} */
 
 @media (max-width:1400px) {
 
@@ -424,10 +414,6 @@ button.ejectButton.middle{
 
 @media (max-width: 400px) {
 
-    /* .terminal.skillsClick {
-        height: auto;
-    } */
-
     .driveInset {
         margin: 15px;
         grid-template-rows: 1fr;
@@ -489,11 +475,4 @@ button.ejectButton.middle{
     }
     }
 
-
-
-
-
-/* .terminal * {
-    border: solid coral 1px;
-} */
 

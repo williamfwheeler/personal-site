@@ -9,7 +9,6 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
   const [scrollClass,setScrollClass] = useState('beforeScroll');
 
   const listenScrollEvent = (e) => {
-    // previously 800
     if (window.scrollY > 600) {
       setScrollClass('afterScroll');
     } else {
@@ -20,7 +19,6 @@ function Terminal({screenClick,ejectClick,floppyClick}) {
   const [floppyArrayClicked, setFloppyArrayClicked] = useState("");
 
   const handleFloppyClick = () => {
-    // add class to splay out click options
     if (floppyArrayClicked==="arrayClicked") {
       setFloppyArrayClicked("")
     }

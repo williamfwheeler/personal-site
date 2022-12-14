@@ -2,7 +2,6 @@ import React from "react";
 import gitHub from '../assets/gitHubFooter.svg';
 import linkedIn from '../assets/linkedInFooter.svg';
 import './footer.css';
-// import bracket from '../assets/bracketFooter.svg';
 
 function Footer() {
 

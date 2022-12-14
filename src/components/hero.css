@@ -1,7 +1,6 @@
 .hero {
     height:100vh;
     background-color: var(--offWhite);
-    /* border: blue solid 3px; */
     display: grid;
     align-content: center;
     text-align: center;
@@ -15,12 +14,6 @@
     height: 70vh;
 } 
 
-.hero .stripeIllustration {
-    /* width: 100%;
-    height: 470px; */
-    /* transform: scale(100%); */
-}
-
 .hero h1 {
     position: relative;
     font-size: 3rem;
@@ -30,27 +23,6 @@
     font-size: 2rem;
 }
 
-/* STRIPE ILLUSTRATION (DEPRECATED) */
-
-/* path.main {
-    stroke: var(--mainDarkBlue);
-    stroke-width: 50px;
-}
-
-path.outer1 {
-    stroke: var(--mainNavy);
-    stroke-width: 50px;
-}
-
-path.outer2 {
-    stroke: var(--mainRedOrange);
-    stroke-width: 50px;
-}
-
-path.outer3 {
-    stroke: var(--mainOrange);
-    stroke-width: 50px;
-} */
 /* FLOPPY CONTAINER */
 
 .floppyContainer {
@@ -66,20 +38,14 @@ path.outer3 {
 /* FLOPPY FORMATTING BELOW */
 
 .floppy.floppy1 {
-    /* right: 35%;
-    top: 30%; */
     transform: rotate(10deg);
 }
 
 .floppy.floppy2 {
-    /* right: 22%;
-    top: 30%; */
     transform: rotate(10deg);
 }
 
 .floppy.floppy3 {
-    /* right: 9%;
-    top: 30%; */
     transform: rotate(10deg);
 }
 
@@ -110,10 +76,6 @@ path.outer3 {
 .floppy3 > text {
     fill: var(--offWhite);
 }
-
-/* .floppy1 > text {
-    fill: var(--offWhite);
-} */
 
 @media (max-width:1500px) {
 
@@ -175,15 +137,9 @@ path.outer3 {
     } 
 
     .floppyContainer {
-        /* position: relative; */
         grid-template-columns: repeat(auto-fill,80px);
         gap: 20px;
         top: 27%;
         right: 6%;
     }
 }
-
-
-/* .hero * {
-    border: solid red 1px;
-} */

@@ -92,7 +92,6 @@
     }
 
     .aboutContent > p, .aboutContent > br {
-        /* font-size: 0.7rem; */
         display: none;
     }
 
@@ -100,9 +99,4 @@
         display: block;
     }
 
-}
-
-
-.about * {
-    /* border: solid red 1px; */
 }
