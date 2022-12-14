@@ -25,7 +25,7 @@
 .aboutContent > p {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -82,7 +82,7 @@
     }
 
     .aboutContent > p {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 }
 
